@@ -13,14 +13,10 @@ struct ContatnView: View {
             List(contacts) { contact in
                 NavigationLink(destination: DetaleView(contact: contact)){
                     ContactRaw(contant: contact)
-
                 }
-
             }
             .navigationBarTitle("Basic")
         }
-     
-
     }
 }
 

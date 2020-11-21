@@ -21,7 +21,8 @@ struct ContentView: View {
                 }
             
 //            ProspectsView(filter: .learn)
-            ContatnView()
+//            ContatnView()
+            MeView()
                 .tabItem {
                     
                     Image(systemName: "book")

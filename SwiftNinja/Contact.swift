@@ -45,3 +45,16 @@ let contacts = [
     Contact(name: "Enforcing Preconditions", scoure: 0,completed:false)
 
 ]
+
+
+struct Subject: Identifiable {
+    let id = UUID()
+    let subjectName:String
+    let subjectScore: Int
+}
+
+let subjects = [
+    Subject(subjectName: "Basic", subjectScore: 0),
+    Subject(subjectName: "Operators", subjectScore: 0)
+
+]

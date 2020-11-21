@@ -7,28 +7,23 @@
 
 import SwiftUI
 
-struct LearnView: View {
-    var body: some View {
-        
-        let prospect = Prospect()
-        VStack{
-            NavigationView{
-                List{
-                    
-                    ForEach (0...prospect.basicsSubjects.count-1, id: \.self){ index in
-                        Text("\(prospect.basicsSubjects[index])")
-                    }
-                }
-                .navigationBarTitle("Basic")
-            }
-   
-            
-        }
-    }
-}
-
-struct LearnView_Previews: PreviewProvider {
-    static var previews: some View {
-        LearnView()
-    }
-}
+//struct LearnView: View {
+//    var subject:Subject
+//        var body: some View {
+//            NavigationView{
+//                List(subjects) { subject in
+//                    NavigationLink(destination: DetaleView(contact: subject)){
+//                        ContactRaw(subject: subject)
+//
+//                    }
+//
+//                }
+//                .navigationBarTitle("Basic")
+//            }
+//        }}
+//
+//struct LearnView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LearnView(subkects: subject)
+//    }
+//}
