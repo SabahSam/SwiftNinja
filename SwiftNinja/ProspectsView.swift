@@ -25,9 +25,7 @@ struct ProspectsView: View {
         }
     }
     
-    
-    
-    
+
     var body: some View {
         NavigationView{
             

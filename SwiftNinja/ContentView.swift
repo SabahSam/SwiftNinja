@@ -20,7 +20,8 @@ struct ContentView: View {
                     Text("Home")
                 }
             
-            ProspectsView(filter: .learn)
+//            ProspectsView(filter: .learn)
+            ContatnView()
                 .tabItem {
                     
                     Image(systemName: "book")
