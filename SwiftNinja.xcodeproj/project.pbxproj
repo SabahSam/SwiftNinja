@@ -11,6 +11,8 @@
 		9BB5A6592569577800328869 /* LearnBySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A6582569577800328869 /* LearnBySubject.swift */; };
 		9BB5A65E2569682500328869 /* ContatnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A65D2569682500328869 /* ContatnView.swift */; };
 		9BB5A66325696DF400328869 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A66225696DF400328869 /* Contact.swift */; };
+		9BB5A6682569782100328869 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A6672569782100328869 /* Home.swift */; };
+		9BB5A66D25697C1F00328869 /* DetaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A66C25697C1F00328869 /* DetaleView.swift */; };
 		9BCC309D2568716200A9DB6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC309C2568716200A9DB6E /* AppDelegate.swift */; };
 		9BCC309F2568716200A9DB6E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC309E2568716200A9DB6E /* SceneDelegate.swift */; };
 		9BCC30A12568716200A9DB6E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCC30A02568716200A9DB6E /* ContentView.swift */; };
@@ -47,6 +49,8 @@
 		9BB5A6582569577800328869 /* LearnBySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnBySubject.swift; sourceTree = "<group>"; };
 		9BB5A65D2569682500328869 /* ContatnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatnView.swift; sourceTree = "<group>"; };
 		9BB5A66225696DF400328869 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		9BB5A6672569782100328869 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		9BB5A66C25697C1F00328869 /* DetaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaleView.swift; sourceTree = "<group>"; };
 		9BCC30992568716200A9DB6E /* SwiftNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCC309C2568716200A9DB6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BCC309E2568716200A9DB6E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +125,8 @@
 				9BB5A65225693B7B00328869 /* LearnView.swift */,
 				9BB5A6582569577800328869 /* LearnBySubject.swift */,
 				9BB5A65D2569682500328869 /* ContatnView.swift */,
+				9BB5A66C25697C1F00328869 /* DetaleView.swift */,
+				9BB5A6672569782100328869 /* Home.swift */,
 				9BB5A66225696DF400328869 /* Contact.swift */,
 				9BCC30D2256874A100A9DB6E /* ProspectsView.swift */,
 				9BCC30DC2568A94F00A9DB6E /* Prospect.swift */,
@@ -297,9 +303,11 @@
 				9BCC30DD2568A94F00A9DB6E /* Prospect.swift in Sources */,
 				9BCC30D3256874A100A9DB6E /* ProspectsView.swift in Sources */,
 				9BB5A66325696DF400328869 /* Contact.swift in Sources */,
+				9BB5A66D25697C1F00328869 /* DetaleView.swift in Sources */,
 				9BCC309F2568716200A9DB6E /* SceneDelegate.swift in Sources */,
 				9BCC30A12568716200A9DB6E /* ContentView.swift in Sources */,
 				9BB5A65325693B7B00328869 /* LearnView.swift in Sources */,
+				9BB5A6682569782100328869 /* Home.swift in Sources */,
 				9BB5A6592569577800328869 /* LearnBySubject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
