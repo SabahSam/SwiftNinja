@@ -16,7 +16,7 @@ struct MeView: View {
                     SubjectRaw(subject: subject)
                 }
             }
-            .navigationBarTitle("Basic")
+            .navigationBarTitle("Subject selection")
         }
     }
 }

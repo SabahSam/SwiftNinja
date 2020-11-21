@@ -9,14 +9,12 @@ import SwiftUI
 
 struct ContatnView: View {
     var body: some View {
-        NavigationView{
             List(contacts) { contact in
                 NavigationLink(destination: DetaleView(contact: contact)){
                     ContactRaw(contant: contact)
                 }
             }
-            .navigationBarTitle("Basic")
-        }
+    
     }
 }
 
