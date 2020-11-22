@@ -5,7 +5,6 @@
 //  Created by Sabah, Sam on 21.11.20.
 //
 
-//["","","","","","", "","","",","","","","","", "Error Handling", "Assertions and Preconditions","Debugging with Assertions","Enforcing Preconditions" ]
 
 
 import SwiftUI
@@ -607,7 +606,6 @@ struct DetaleView: View {
                 }
             }
             
-            
             else if contact.name == "Optionals" {
                 VStack (alignment: .leading){
                     Text(contact.name)
@@ -823,9 +821,212 @@ struct DetaleView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .clipped()
+                    
+                    
+                    
     
                 }
             }
+            
+            else if contact.name == "Error Handling" {
+                VStack (alignment: .leading){
+                    Text(contact.name)
+                        .bold()
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.leading)
+                    
+                    
+                    Text("""
+                    You use error handling to respond to error conditions your program may encounter during execution.
+
+                    In contrast to optionals, which can use the presence or absence of a value to communicate success or failure of a function, error handling allows you to determine the underlying cause of failure, and, if necessary, propagate the error to another part of your program.
+
+                    When a function encounters an error condition, it throws an error. That function’s caller can then catch the error and respond appropriately.
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Image("Error001")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    Text("""
+                    A function indicates that it can throw an error by including the throws keyword in its declaration. When you call a function that can throw an error, you prepend the try keyword to the expression.
+
+                    Swift automatically propagates errors out of their current scope until they’re handled by a catch clause.
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Image("Error002")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    Text("""
+                    A do statement creates a new containing scope, which allows errors to be propagated to one or more catch clauses.
+
+                    Here’s an example of how error handling can be used to respond to different error conditions:
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Image("Error003")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    Text("""
+                    In this example, the makeASandwich() function will throw an error if no clean dishes are available or if any ingredients are missing. Because makeASandwich() can throw an error, the function call is wrapped in a try expression. By wrapping the function call in a do statement, any errors that are thrown will be propagated to the provided catch clauses.
+
+                    If no error is thrown, the eatASandwich() function is called. If an error is thrown and it matches the SandwichError.outOfCleanDishes case, then the washDishes() function will be called. If an error is thrown and it matches the SandwichError.missingIngredients case, then the buyGroceries(_:) function is called with the associated [String] value captured by the catch pattern.
+
+                    """)
+    
+                }
+            }
+
+            else if contact.name == "Assertions and Preconditions" {
+                VStack (alignment: .leading){
+                    Text(contact.name)
+                        .bold()
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.leading)
+                    
+                    
+                    Text("""
+                    Assertions and preconditions are checks that happen at runtime. You use them to make sure an essential condition is satisfied before executing any further code. If the Boolean condition in the assertion or precondition evaluates to true, code execution continues as usual. If the condition evaluates to false, the current state of the program is invalid; code execution ends, and your app is terminated.
+
+                    You use assertions and preconditions to express the assumptions you make and the expectations you have while coding, so you can include them as part of your code. Assertions help you find mistakes and incorrect assumptions during development, and preconditions help you detect issues in production.
+
+                    In addition to verifying your expectations at runtime, assertions and preconditions also become a useful form of documentation within the code. Unlike the error conditions discussed in Error Handling above, assertions and preconditions aren’t used for recoverable or expected errors. Because a failed assertion or precondition indicates an invalid program state, there’s no way to catch a failed assertion.
+
+                    Using assertions and preconditions isn’t a substitute for designing your code in such a way that invalid conditions are unlikely to arise. However, using them to enforce valid data and state causes your app to terminate more predictably if an invalid state occurs, and helps make the problem easier to debug. Stopping execution as soon as an invalid state is detected also helps limit the damage caused by that invalid state.
+
+                    The difference between assertions and preconditions is in when they’re checked: Assertions are checked only in debug builds, but preconditions are checked in both debug and production builds. In production builds, the condition inside an assertion isn’t evaluated. This means you can use as many assertions as you want during your development process, without impacting performance in production.
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Text("Debugging with Assertions")
+                        .font(.title2)
+                    
+                    Text("""
+                    You write an assertion by calling the assert(_:_:file:line:) function from the Swift standard library. You pass this function an expression that evaluates to true or false and a message to display if the result of the condition is false. For example:
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                   
+                    Image("Assertions001")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    Text("""
+                    In this example, code execution continues if age >= 0 evaluates to true, that is, if the value of age is nonnegative. If the value of age is negative, as in the code above, then age >= 0 evaluates to false, and the assertion fails, terminating the application.
+
+                    You can omit the assertion message—for example, when it would just repeat the condition as prose.
+
+                    """)
+                    Image("Assertions002")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    
+                    Text("""
+                    If the code already checks the condition, you use the assertionFailure(_:file:line:) function to indicate that an assertion has failed. For example:
+
+                    """)
+                    
+                    Image("Assertions003")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    
+                    
+    
+                }
+            }
+            
+            else if contact.name == "Debugging with Assertions" {
+                VStack (alignment: .leading){
+                    Text(contact.name)
+                        .bold()
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.leading)
+                    
+                    
+                    Text("""
+                    You write an assertion by calling the assert(_:_:file:line:) function from the Swift standard library. You pass this function an expression that evaluates to true or false and a message to display if the result of the condition is false. For example:
+
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Image("Debugging001")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    
+                    Text("""
+                    In this example, code execution continues if age >= 0 evaluates to true, that is, if the value of age is nonnegative. If the value of age is negative, as in the code above, then age >= 0 evaluates to false, and the assertion fails, terminatin                    g the application.
+
+                    You can omit the assertion message—for example, when it would just repeat the condition as prose.
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Image("Debugging002")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    
+                    Text("""
+                    If the code already checks the condition, you use the assertionFailure(_:file:line:) function to indicate that an assertion has failed. For example:
+
+                    """)
+                        .multilineTextAlignment(.leading)
+                    
+                    Image("Debugging003")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+    
+                }
+            }
+
+            else if contact.name == "Enforcing Preconditions" {
+                VStack (alignment: .leading){
+                    Text(contact.name)
+                        .bold()
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.leading)
+
+
+                    Text("""
+                    Use a precondition whenever a condition has the potential to be false, but must definitely be true for your code to continue execution. For example, use a precondition to check that a subscript is not out of bounds, or to check that a function has been passed a valid value.
+
+                    You write a precondition by calling the precondition(_:_:file:line:) function. You pass this function an expression that evaluates to true or false and a message to display if the result of the condition is false. For example:
+                    """)
+                        .multilineTextAlignment(.leading)
+
+                    Image("Enforcing001")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipped()
+                    
+                    Text("""
+                    You can also call the preconditionFailure(_:file:line:) function to indicate that a failure has occurred—for example, if the default case of a switch was taken, but all valid input data should have been handled by one of the switch’s other cases.
+
+                    """)
+
+                }
+            }
+
 
             
         }
