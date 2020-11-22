@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B74E2192569D12F00DC53BC /* OnlineSwiftPlayGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74E2182569D12F00DC53BC /* OnlineSwiftPlayGround.swift */; };
 		9BB5A65325693B7B00328869 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A65225693B7B00328869 /* LearnView.swift */; };
 		9BB5A6592569577800328869 /* LearnBySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A6582569577800328869 /* LearnBySubject.swift */; };
 		9BB5A65E2569682500328869 /* ContatnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A65D2569682500328869 /* ContatnView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9B74E2182569D12F00DC53BC /* OnlineSwiftPlayGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineSwiftPlayGround.swift; sourceTree = "<group>"; };
 		9BB5A65225693B7B00328869 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		9BB5A6582569577800328869 /* LearnBySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnBySubject.swift; sourceTree = "<group>"; };
 		9BB5A65D2569682500328869 /* ContatnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContatnView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				9BB5A6582569577800328869 /* LearnBySubject.swift */,
 				9BB5A65D2569682500328869 /* ContatnView.swift */,
 				9BB5A66C25697C1F00328869 /* DetaleView.swift */,
+				9B74E2182569D12F00DC53BC /* OnlineSwiftPlayGround.swift */,
 				9BB5A6672569782100328869 /* Home.swift */,
 				9BB5A66225696DF400328869 /* Contact.swift */,
 				9BCC30D2256874A100A9DB6E /* ProspectsView.swift */,
@@ -301,6 +304,7 @@
 				9BCC30A42568716200A9DB6E /* SwiftNinja.xcdatamodeld in Sources */,
 				9BCC309D2568716200A9DB6E /* AppDelegate.swift in Sources */,
 				9BCC30DD2568A94F00A9DB6E /* Prospect.swift in Sources */,
+				9B74E2192569D12F00DC53BC /* OnlineSwiftPlayGround.swift in Sources */,
 				9BCC30D3256874A100A9DB6E /* ProspectsView.swift in Sources */,
 				9BB5A66325696DF400328869 /* Contact.swift in Sources */,
 				9BB5A66D25697C1F00328869 /* DetaleView.swift in Sources */,

@@ -28,6 +28,13 @@ struct ContentView: View {
                     Image(systemName: "book")
                     Text("Learn")
                 }
+            
+            OnlineSwiftPlayGround()
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("PlayGround")
+                    
+                }
         }
         
         .environmentObject(prospects)
