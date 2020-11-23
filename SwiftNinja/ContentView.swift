@@ -13,15 +13,26 @@ struct ContentView: View {
     var body: some View {
 
         TabView{
-            ProspectsView(filter: .home)
-                .tabItem {
-                    
-                    Image(systemName: "homekit")
-                    Text("Home")
-                }
+//            ProspectsView(filter: .home)
+//                .tabItem {
+//
+//                    Image(systemName: "homekit")
+//                    Text("Home")
+//                }
             
 //            ProspectsView(filter: .learn)
 //            ContatnView()
+            
+            BarChart()
+                            .tabItem {
+            
+                                Image(systemName: "homekit")
+                                Text("Home")
+                            }
+            
+            
+            
+            
             MeView()
                 .tabItem {
                     
@@ -29,9 +40,20 @@ struct ContentView: View {
                     Text("Learn")
                 }
             
+            Test()
+                .tabItem {
+                    
+                    Image(systemName: "bookmark")
+                    Text("Test your Knowledge")
+                }
+            
+            
+            
+            
+            
             OnlineSwiftPlayGround()
                 .tabItem {
-                    Image(systemName: "book")
+                    Image(systemName: "play")
                     Text("PlayGround")
                     
                 }

@@ -31,17 +31,7 @@ struct ProspectsView: View {
             
             Text("People \(prospects.pepole.count)")
             .navigationBarTitle(titel)
-                .navigationBarItems(trailing:Button(action: {
-                    
-                    let prospect = Prospect()
-                    prospect.name = "Sam "
-                    prospect.emailAdress = "Sams Email Adress"
-                    self.prospects.pepole.append(prospect)
-                    
-                }){
-                  Image(systemName: "bookmark")
-                    Text("Scan")
-                })
+
 
 
         }
@@ -54,3 +44,22 @@ struct ProspectsView_Previews: PreviewProvider {
         ProspectsView(filter: .home)
     }
 }
+
+
+/*
+ 
+ .navigationBarItems(trailing:Button(action: {
+     
+
+     
+ }){
+   Image(systemName: "bookmark")
+     Text("Scan")
+ })
+ 
+ 
+ let prospect = Prospect()
+ prospect.name = "Sam "
+ prospect.emailAdress = "Sams Email Adress"
+ self.prospects.pepole.append(prospect)
+ */
