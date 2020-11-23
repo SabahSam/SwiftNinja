@@ -34,6 +34,46 @@ struct BarChart: View {
                 .padding()
 
                 
+                
+                
+                
+                
+                VStack(alignment: .leading, spacing: 25) {
+                    
+                    Text("Overall Progress")
+                        .font(.system(size: 22))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                   
+                    ZStack{
+                        Circle()
+                            .trim(from: 0, to: 1)
+                            .stroke(Color.white.opacity(0.05), lineWidth: 20)
+  //                          .frame(width: (UIScreen.main.bounds.width ) / 2, height: (UIScreen.main.bounds.width) / 2)
+                        
+                        Circle()
+                            .trim(from: 0, to: 0.60)
+                            .stroke(Color.blue, style: StrokeStyle(lineWidth: 20, lineCap: .round))
+                            .frame(width: (UIScreen.main.bounds.width ) / 2, height: (UIScreen.main.bounds.width ) / 2)
+                        
+                        Text(getPrecent(current: 60.0, Goal: 100.0) + "%")
+                            .font(.system(size: 22))
+                            .fontWeight(.bold)
+                            .foregroundColor(Color.white)
+                            .rotationEffect(.init(degrees: 90))
+
+                    }
+                    .rotationEffect(.init(degrees: -90))
+
+
+                }
+                .padding()
+                .background(Color.white.opacity(0.08))
+                .cornerRadius(10)
+                .padding()
+                // Quiz Progress status outer border
+                
+                
                 // Quiz-BAR Starting
                 VStack(alignment: .leading, spacing: 25) {
                     
@@ -89,23 +129,19 @@ struct BarChart: View {
                 // Quiz Progress status outer border
             
                 HStack{
-                    Text("Progress")
+                    Text("Learn Progress")
                         .font(.title)
                         .foregroundColor(.white)
                         .fontWeight(.bold)
                     Spacer(minLength: 0)
                     
-                    Button(action: {}){
-                    Image("menu")
-                        .renderingMode(.template)
-                        .foregroundColor(.white)
-                    }
+
                 }
                 .padding()
                 
                 //status Gridd
                 
-                LazyVGrid(columns: columns, spacing: 30){
+                LazyVGrid(columns: columns, spacing: 25){
                     
                     ForEach(stats_Data){stats in
                         
@@ -147,6 +183,51 @@ struct BarChart: View {
                     }
                 }
                 .padding()
+                
+                
+                //Achivment
+                VStack(alignment: .leading, spacing: 25) {
+                    
+                    Text("Achievement")
+                        .font(.system(size: 22))
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                    let iconArray = Array(1...16).map {"Icon\($0)"}
+                    let layout = [
+                        GridItem(.flexible(minimum: 80.0, maximum: 80.0)),
+                        GridItem(.flexible(minimum: 80.0, maximum: 80.0)),
+                        GridItem(.flexible(minimum: 80.0, maximum: 80.0)),
+                        GridItem(.flexible(minimum: 80.0, maximum: 80.0))
+
+
+
+
+                    ]
+                    
+                    LazyVGrid(columns: layout, spacing: 20){
+                        ForEach(iconArray, id: (\.self)) { item in
+                            HStack{
+                                Image(item)
+                                    .resizable()
+                                    .scaledToFit()
+                                    .foregroundColor(.blue)
+
+                            }
+                            
+                        }
+                        
+                    }
+                    .padding(.horizontal)
+
+
+
+                }
+                .padding()
+                .background(Color.white.opacity(0.08))
+                .cornerRadius(10)
+                // Quiz Progress status outer border
+                
+                
             }
             .background(Color.black.edgesIgnoringSafeArea(.all))
             .preferredColorScheme(.dark)
@@ -211,7 +292,7 @@ var progress_Data = [
     Daily(id: 1, quiz: "Q 2", scoure: 880),
     Daily(id: 2, quiz: "Q 3", scoure: 250),
     Daily(id: 3, quiz: "Q 4", scoure: 360),
-    Daily(id: 4, quiz: "Q 5", scoure: 1220),
+    Daily(id: 4, quiz: "Q 5", scoure: 1000),
     Daily(id: 5, quiz: "Q 6", scoure: 750),
     Daily(id: 6, quiz: "Q 7", scoure: 950)
 ]
@@ -229,15 +310,13 @@ struct Stats : Identifiable {
 
 var stats_Data = [
 
-    Stats(id: 0, title: "Running", currentData: 6.8, goal: 15, color: Color("running")),
+    Stats(id: 0, title: "Basics", currentData: 6.8, goal: 15, color: Color("running")),
     
-    Stats(id: 1, title: "Water", currentData: 3.5, goal: 5, color: Color("water")),
+    Stats(id: 1, title: "Antermediate", currentData: 3.5, goal: 5, color: Color("cycle")),
     
-    Stats(id: 2, title: "Energy Burn", currentData: 585, goal: 1000, color: Color("energy")),
+    Stats(id: 2, title: "Advanced ", currentData: 585, goal: 1000, color: Color("energy")),
     
-    Stats(id: 3, title: "Sleep", currentData: 6.2, goal: 10, color: Color("sleep")),
+    Stats(id: 3, title: "Advanced 2", currentData: 6.2, goal: 10, color: Color("sleep")),
     
-    Stats(id: 4, title: "Cycling", currentData: 12.5, goal: 25, color: Color("cycle")),
-    
-    Stats(id: 5, title: "Steps", currentData: 16889, goal: 20000, color: Color("steps")),
+
 ]
