@@ -11,8 +11,11 @@ struct BarChart: View {
     
     @State var selected =  0
     var colours = [Color("Color1"),Color("Color")]
+    var columns = Array(repeating: GridItem(.flexible(), spacing: 20), count: 2)
+
+    
     var body: some View {
-        
+    
         ScrollView(.vertical, showsIndicators: false){
             VStack{
                 HStack{
@@ -23,13 +26,13 @@ struct BarChart: View {
                     Spacer(minLength: 0)
                     
                     Button(action: {}){
-                    Image("mnue")
+                    Image("menu")
                         .renderingMode(.template)
                         .foregroundColor(.white)
-  //                  padding()
                     }
                 }
-                
+                .padding()
+
                 
                 // Quiz-BAR Starting
                 VStack(alignment: .leading, spacing: 25) {
@@ -54,11 +57,11 @@ struct BarChart: View {
                                     
 
                                     
-                                    Rectangle()
-                                        .fill(LinearGradient(gradient: .init(colors: selected == work.id ? colours : [Color.white.opacity(0.06)]), startPoint: .top, endPoint: .bottom))
+                                    RoundedShape()
+                                        .fill(LinearGradient(gradient: .init(colors: selected == work.id ? colours : [Color.white.opacity(0.08)]), startPoint: .top, endPoint: .bottom))
                                     // max hight = 200
                                     
-                                        .frame( height: work.scoure)
+                                        .frame( height: getQuizProgressHight(value: work.scoure))
                                 }
                                 .frame( height: 220)
                                 .onTapGesture {
@@ -80,11 +83,70 @@ struct BarChart: View {
 
                 }
                 .padding()
-                .background(Color.white.opacity(0.1))
+                .background(Color.white.opacity(0.08))
                 .cornerRadius(10)
                 .padding()
                 // Quiz Progress status outer border
             
+                HStack{
+                    Text("Progress")
+                        .font(.title)
+                        .foregroundColor(.white)
+                        .fontWeight(.bold)
+                    Spacer(minLength: 0)
+                    
+                    Button(action: {}){
+                    Image("menu")
+                        .renderingMode(.template)
+                        .foregroundColor(.white)
+                    }
+                }
+                .padding()
+                
+                //status Gridd
+                
+                LazyVGrid(columns: columns, spacing: 30){
+                    
+                    ForEach(stats_Data){stats in
+                        
+                        VStack(spacing: 22){
+                            HStack{
+                                Text(stats.title)
+                                    .font(.system(size: 22))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                                Spacer(minLength: 0)
+                            }
+                            
+                            // Ring
+                            ZStack{
+                                Circle()
+                                    .trim(from: 0, to: 1)
+                                    .stroke(stats.color.opacity(0.05), lineWidth: 10)
+                                    .frame(width: (UIScreen.main.bounds.width - 150) / 2, height: (UIScreen.main.bounds.width - 150) / 2)
+                                
+                                Circle()
+                                    .trim(from: 0, to: stats.currentData / stats.goal)
+                                    .stroke(stats.color, style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                                    .frame(width: (UIScreen.main.bounds.width - 150) / 2, height: (UIScreen.main.bounds.width - 150) / 2)
+                                
+                                Text(getPrecent(current: stats.currentData, Goal: stats.goal) + "%")
+                                    .font(.system(size: 22))
+                                    .fontWeight(.bold)
+                                    .foregroundColor(stats.color)
+                                    .rotationEffect(.init(degrees: 90))
+
+                            }
+                            .rotationEffect(.init(degrees: -90))
+
+                        }
+                        .padding()
+                        .background(Color.white.opacity(0.08))
+                        .cornerRadius(15)
+                        .shadow(color: Color.white.opacity(0.1), radius: 10, x: 0, y: 0)
+                    }
+                }
+                .padding()
             }
             .background(Color.black.edgesIgnoringSafeArea(.all))
             .preferredColorScheme(.dark)
@@ -103,7 +165,7 @@ struct BarChart_Previews: PreviewProvider {
     }
 }
 
-func getQuizProgress (value: CGFloat) -> CGFloat {
+func getQuizProgressHight (value: CGFloat) -> CGFloat {
     
     // dummy data
     let score = CGFloat(value / 1440) * 200
@@ -114,6 +176,24 @@ func getOverallQuizProgress(valua: CGFloat) -> String {
     let score = valua / 60
     return String(format: "%.1f", score)
 }
+
+
+// culculation persent
+
+func getPrecent(current: CGFloat, Goal: CGFloat) -> String {
+    let per = (current / Goal) * 100
+    return String(format: "%.1f", per)
+}
+
+struct RoundedShape: Shape {
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: [.topLeft,.topRight], cornerRadii: CGSize(width: 5, height: 5))
+        
+        return Path(path.cgPath)
+    }
+    
+}
+
 
 
 // sample Data...
