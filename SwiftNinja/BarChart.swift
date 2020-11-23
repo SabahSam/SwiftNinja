@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct BarChart: View {
+    
+    @State var selected =  0
+    var colours = [Color("Color1"),Color("Color")]
     var body: some View {
         
         ScrollView(.vertical, showsIndicators: false){
@@ -28,8 +31,9 @@ struct BarChart: View {
                 }
                 
                 
-                // V-BAR
+                // Quiz-BAR Starting
                 VStack(alignment: .leading, spacing: 25) {
+                    
                     Text("Quiz Progress")
                         .font(.system(size: 22))
                         .fontWeight(.bold)
@@ -39,18 +43,33 @@ struct BarChart: View {
                         ForEach(progress_Data){ work in
                             
                             VStack{
-                                Text("2.5")
-                                    .foregroundColor(Color("Color"))
-                                
-                                Rectangle()
-                                    .fill(LinearGradient(gradient: .init(colors: [Color("Color1"),Color("Color")]), startPoint: .top, endPoint: .bottom))
-                                // max hight = 200
-                                
-                                    .frame( height: 200)
+                                VStack{
+                                    Spacer(minLength: 0)
+                                    
+                                    if selected == work.id{
+                                        Text(getOverallQuizProgress(valua: work.scoure))
+                                            .foregroundColor(Color("Color"))
+                                            .padding(.bottom,5)
+                                    }
+                                    
+
+                                    
+                                    Rectangle()
+                                        .fill(LinearGradient(gradient: .init(colors: selected == work.id ? colours : [Color.white.opacity(0.06)]), startPoint: .top, endPoint: .bottom))
+                                    // max hight = 200
+                                    
+                                        .frame( height: work.scoure)
+                                }
+                                .frame( height: 220)
+                                .onTapGesture {
+                                    withAnimation(.easeOut){
+                                        selected = work.id
+                                    }
+                                }
+
                                 
                                 Text(work.quiz)
                                     .font(.caption)
-                                    
                                     .foregroundColor(.white)
     
                             }
@@ -58,13 +77,22 @@ struct BarChart: View {
                         }
                         
                     }
-                    .padding()
+
                 }
+                .padding()
+                .background(Color.white.opacity(0.1))
+                .cornerRadius(10)
+                .padding()
+                // Quiz Progress status outer border
             
             }
             .background(Color.black.edgesIgnoringSafeArea(.all))
             .preferredColorScheme(.dark)
+            //
         }
+        // progress math culcolator
+        
+
         
     }
 }
@@ -75,6 +103,17 @@ struct BarChart_Previews: PreviewProvider {
     }
 }
 
+func getQuizProgress (value: CGFloat) -> CGFloat {
+    
+    // dummy data
+    let score = CGFloat(value / 1440) * 200
+    return score
+}
+
+func getOverallQuizProgress(valua: CGFloat) -> String {
+    let score = valua / 60
+    return String(format: "%.1f", score)
+}
 
 
 // sample Data...
@@ -83,18 +122,18 @@ struct Daily : Identifiable {
     
     var id : Int
     var quiz : String
-    var workout_In_Min : CGFloat
+    var scoure : CGFloat
 }
 
 var progress_Data = [
 
-    Daily(id: 0, quiz: "Q 1", workout_In_Min: 480),
-    Daily(id: 1, quiz: "Q 2", workout_In_Min: 880),
-    Daily(id: 2, quiz: "Q 3", workout_In_Min: 250),
-    Daily(id: 3, quiz: "Q 4", workout_In_Min: 360),
-    Daily(id: 4, quiz: "Q 5", workout_In_Min: 1220),
-    Daily(id: 5, quiz: "Q 6", workout_In_Min: 750),
-    Daily(id: 6, quiz: "Q 7", workout_In_Min: 950)
+    Daily(id: 0, quiz: "Q 1", scoure: 480),
+    Daily(id: 1, quiz: "Q 2", scoure: 880),
+    Daily(id: 2, quiz: "Q 3", scoure: 250),
+    Daily(id: 3, quiz: "Q 4", scoure: 360),
+    Daily(id: 4, quiz: "Q 5", scoure: 1220),
+    Daily(id: 5, quiz: "Q 6", scoure: 750),
+    Daily(id: 6, quiz: "Q 7", scoure: 950)
 ]
 
 // stats Data...
