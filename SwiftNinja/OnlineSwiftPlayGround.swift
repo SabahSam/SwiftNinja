@@ -12,7 +12,7 @@ struct OnlineSwiftPlayGround: View {
     var body: some View {
         NavigationView{
             VStack{
-                WebView(request: URLRequest(url: URL(string:"https://iswift.org/playground")!))
+                WebView(request: URLRequest(url: URL(string:"https://repl.it/languages/swift")!))
                 
             }
             .navigationBarTitle(Text("Online Swift PlayGround"))

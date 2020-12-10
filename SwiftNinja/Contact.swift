@@ -54,7 +54,10 @@ struct Subject: Identifiable {
 }
 
 let subjects = [
-    Subject(subjectName: "Basic", subjectScore: 0),
-    Subject(subjectName: "Operators", subjectScore: 0)
+    Subject(subjectName: "Basic", subjectScore: 1700),
+    Subject(subjectName: "Intermediate", subjectScore: 500),
+    Subject(subjectName: "Advanced", subjectScore: 300),
+    Subject(subjectName: "Advanced 2", subjectScore: 0)
+
 
 ]
