@@ -61,3 +61,43 @@ let subjects = [
 
 
 ]
+
+
+
+struct Quis: Identifiable {
+    let id = UUID()
+    let quizName:String
+    let quizScore: Int
+}
+
+let quises = [
+    
+    Quis(quizName: "Basik Knowladge Quiz", quizScore: 50),
+    Quis(quizName: "Intermittent Quiz", quizScore: 50),
+    Quis(quizName: " Advanced 1 Quiz", quizScore: 50),
+    Quis(quizName: "Advanced 2 Quiz", quizScore: 50)
+
+
+]
+
+
+
+
+struct QuizOne: Identifiable {
+    let qustion:String
+
+    let result:Bool?
+    let id = UUID()
+}
+
+
+
+let quisOneContent = [
+    
+    QuizOne(qustion: "Let X = '10' ", result: nil),
+    QuizOne(qustion: "var Tawon = Frankfurt ", result: nil),
+    QuizOne(qustion: " Uni = Goethe ", result: nil),
+    QuizOne(qustion: " var Name == 'Max' ", result: nil),
+    QuizOne(qustion: " Let Willcome = 'true' ", result: nil)
+
+]
