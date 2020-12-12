@@ -86,7 +86,7 @@ let quises = [
 struct QuizOne: Identifiable {
     let qustion:String
 
-    let result:Bool?
+    let result:Bool
     let id = UUID()
 }
 
@@ -94,10 +94,10 @@ struct QuizOne: Identifiable {
 
 let quisOneContent = [
     
-    QuizOne(qustion: "Let X = '10' ", result: nil),
-    QuizOne(qustion: "var Tawon = Frankfurt ", result: nil),
-    QuizOne(qustion: " Uni = Goethe ", result: nil),
-    QuizOne(qustion: " var Name == 'Max' ", result: nil),
-    QuizOne(qustion: " Let Willcome = 'true' ", result: nil)
+    QuizOne(qustion: "Let X = '10' ", result: true),
+    QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
+    QuizOne(qustion: " Uni = Goethe ", result: true),
+    QuizOne(qustion: " var Name == 'Max' ", result: true),
+    QuizOne(qustion: " Let Willcome = 'true' ", result: true)
 
 ]

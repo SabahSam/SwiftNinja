@@ -10,24 +10,16 @@ import SwiftUI
 struct Quizviwe: View {
     var body: some View {
         NavigationView{
-            VStack {
-                Text("Wich of the floowing is valuid swift")
-                    .frame(alignment: .leading)
-                    .foregroundColor(Color.blue)
-                    .font(.title)
-                
 
-
-                    
-            
                 List(quisOneContent) { contact in
-                        QuizOneRaw(qustions: contact)
                             
+                        QuizOneRaw(qustions: contact)
+                                    
                 }
-                Button("Check your Answer") {
-                    (print ("Hi"))
-                }
-            }
+            
+            
+
+            
 
         }
         .navigationBarTitle("Wich of the floowing is valuid swift",displayMode: .inline)
@@ -48,27 +40,33 @@ struct Quizviwe_Previews: PreviewProvider {
 struct QuizOneRaw: View {
     
     let qustions:QuizOne
+    @State private var didTap:Bool = false
+
     var body: some View {
         HStack {
-  
-            
-            VStack(alignment: .leading){
+            Button(action: {
+                self.didTap.toggle()
+                }) {
+
                 Text(qustions.qustion)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
                     .font(.system(size: 21, weight:.medium, design: .default))
-     
-                    Spacer()
-            }
-            Spacer()
-//            if qustions.result{
-//                Image("check")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fill)
-//                    .frame(width: 30, height: 30)
-//                    .clipped()
-//                    .cornerRadius(50)
-//
-//            }
+
+
+                }
+
         }
+
+        .background(didTap ? Color.blue : Color.clear)
+        
+        if didTap && qustions.result {
+            Image("check")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40, alignment: .center)
+        }
+        
+
     }
 }
 
