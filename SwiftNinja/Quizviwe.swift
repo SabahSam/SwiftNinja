@@ -11,11 +11,12 @@ struct Quizviwe: View {
     var body: some View {
         NavigationView{
 
+            VStack {
+                
                 List(quisOneContent) { contact in
-                            
-                        QuizOneRaw(qustions: contact)
-                                    
+                            QuizOneRaw(qustions: contact)
                 }
+            }
             
             
 
@@ -41,31 +42,41 @@ struct QuizOneRaw: View {
     
     let qustions:QuizOne
     @State private var didTap:Bool = false
+    @State var score = 0
 
     var body: some View {
         HStack {
             Button(action: {
                 self.didTap.toggle()
                 }) {
-
+                
+                
+                
                 Text(qustions.qustion)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+                    .frame(minWidth: 40, maxWidth: .infinity, minHeight: 40, maxHeight: .infinity, alignment: .topLeading)
                     .font(.system(size: 21, weight:.medium, design: .default))
+                    
+                    .background(didTap && qustions.result ? Color.blue : didTap && !qustions.result ? Color.red : Color.clear)
 
-
-                }
+            }
 
         }
 
-        .background(didTap ? Color.blue : Color.clear)
         
         if didTap && qustions.result {
             Image("check")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40, alignment: .center)
+
+
         }
-        
+        else if didTap && !qustions.result {
+            Image("redx")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 40, height: 40, alignment: .center)
+        }
 
     }
 }

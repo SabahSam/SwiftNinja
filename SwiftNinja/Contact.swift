@@ -100,4 +100,4 @@ let quisOneContent = [
     QuizOne(qustion: " var Name == 'Max' ", result: true),
     QuizOne(qustion: " Let Willcome = 'true' ", result: true)
 
-]
+].shuffled()
