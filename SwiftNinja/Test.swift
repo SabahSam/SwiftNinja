@@ -37,17 +37,18 @@ struct QuisRaw: View {
             VStack(alignment: .leading){
                 Text(quis.quizName)
                     .font(.system(size: 21, weight:.medium, design: .default))
-                Text("Quiz scoure:\(quis.quizScore)")
+//                Text("Quiz scoure:\(quis.quizScore)")
                     Spacer()
             }
             Spacer()
+            /*
                 Image("check")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 30, height: 30)
                     .clipped()
                     .cornerRadius(50)
-                    
+            */
             
         }
     }

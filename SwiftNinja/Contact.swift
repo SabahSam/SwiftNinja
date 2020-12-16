@@ -98,6 +98,39 @@ let quisOneContent = [
     QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
     QuizOne(qustion: " Uni = Goethe ", result: true),
     QuizOne(qustion: " var Name == 'Max' ", result: true),
-    QuizOne(qustion: " Let Willcome = 'true' ", result: true)
+    QuizOne(qustion: " Let Willcome = 'true' ", result: true),
+    QuizOne(qustion: "let cat = '🐱'; print(cat) //will Prints '🐱'", result: true),
+    QuizOne(qustion: "Double represents a 32-bit floating-point number.", result: false),
+    QuizOne(qustion: "Float represents a 32-bit floating-point number.", result: false),
+    QuizOne(qustion: "let three = 3 //is from type Int32", result: false),
+    QuizOne(qustion: "let three = 3 //is from type Int32", result: false),
+    QuizOne(qustion: "let integerPi = Int(pi)", result: true),
+    QuizOne(qustion: "let i = 1\n if i\n {\n }", result: false)
+
+
+    
+
+].shuffled()
+
+
+
+struct QuizTwo: Identifiable {
+    let qustion:String
+
+    let result:Bool
+    let id = UUID()
+}
+
+
+
+let quisTwoContent = [
+    
+    QuizOne(qustion: "Let X = '10' ", result: true),
+    QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
+    QuizOne(qustion: " Uni = Goethe ", result: true),
+
+
+
+    
 
 ].shuffled()

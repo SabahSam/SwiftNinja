@@ -14,7 +14,7 @@ struct Quizviwe: View {
 
             VStack {
                 
-                List(quisOneContent) { contact in
+                List(quisTwoContent) { contact in
                     QuizOneRaw(qustions: contact, score: $score)
                 }
             }
