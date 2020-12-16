@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct Quizviwe: View {
+@State var score = 0
     var body: some View {
         NavigationView{
 
             VStack {
                 
                 List(quisOneContent) { contact in
-                            QuizOneRaw(qustions: contact)
+                    QuizOneRaw(qustions: contact, score: $score)
                 }
             }
             .navigationBarTitle("Which of the following is valid swift",displayMode: .inline)
 
+        } .navigationBarItems(trailing: Text("Score \(score)"))
+        
 
-
-
-        }
 
 
         
@@ -42,13 +42,16 @@ struct QuizOneRaw: View {
     
     let qustions:QuizOne
     @State private var didTap: Bool = false
-    @State private var score : Bool = true
+    @Binding var score :Int
     var body: some View {
         HStack {
             Button(action: {
                 self.didTap.toggle()
-                culcScore()
-      
+                if (didTap && qustions.result){
+                    self.score += 10
+                } else if (!didTap && qustions.result){
+                    self.score -= 10
+                }
             }) {
                 Text(qustions.qustion)
                     .frame(minWidth: 40, maxWidth: .infinity, minHeight: 40, maxHeight: .infinity, alignment: .topLeading)
