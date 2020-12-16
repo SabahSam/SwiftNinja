@@ -72,10 +72,10 @@ struct Quis: Identifiable {
 
 let quises = [
     
-    Quis(quizName: "Basik Knowladge Quiz", quizScore: 50),
-    Quis(quizName: "Intermittent Quiz", quizScore: 50),
-    Quis(quizName: " Advanced 1 Quiz", quizScore: 50),
-    Quis(quizName: "Advanced 2 Quiz", quizScore: 50)
+    Quis(quizName: "Basik Knowladge", quizScore: 50),
+    Quis(quizName: "Intermittent", quizScore: 50),
+    Quis(quizName: "Advanced 1", quizScore: 50),
+    Quis(quizName: "Advanced 2", quizScore: 50)
 
 
 ]
@@ -92,7 +92,7 @@ struct QuizOne: Identifiable {
 
 
 
-let quisOneContent = [
+let basikKnowladgeQuiz = [
     
     QuizOne(qustion: "Let X = '10' ", result: true),
     QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
@@ -113,24 +113,27 @@ let quisOneContent = [
 ].shuffled()
 
 
-
-struct QuizTwo: Identifiable {
-    let qustion:String
-
-    let result:Bool
-    let id = UUID()
-}
+let intermittentQuiz = [
+    
+    QuizOne(qustion: "Let X = '10' ", result: true),
 
 
+].shuffled()
 
-let quisTwoContent = [
+
+
+
+
+let advanced1Quiz = [
+    
+    QuizOne(qustion: "Let X = '10' ", result: true),
+    QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
+
+].shuffled()
+
+let advanced2Quiz = [
     
     QuizOne(qustion: "Let X = '10' ", result: true),
     QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
     QuizOne(qustion: " Uni = Goethe ", result: true),
-
-
-
-    
-
 ].shuffled()

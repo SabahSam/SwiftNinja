@@ -8,19 +8,37 @@
 import SwiftUI
 
 struct Quizviwe: View {
+    let quis:Quis
+
 @State var score = 0
     var body: some View {
         NavigationView{
+            
 
             VStack {
-                
-                List(quisTwoContent) { contact in
-                    QuizOneRaw(qustions: contact, score: $score)
+                if quis.quizName == "Basik Knowladge"{
+                    List(basikKnowladgeQuiz) { contact in
+                        QuizOneRaw(qustions: contact, score: $score)
+                    }
+                } else if quis.quizName == "Intermittent"{
+                    List(intermittentQuiz) { contact in
+                        QuizOneRaw(qustions: contact, score: $score)
+                    }
+                }  else if quis.quizName == "Advanced 1"{
+                    List(advanced1Quiz) { contact in
+                        QuizOneRaw(qustions: contact, score: $score)
+                    }
+                } else if quis.quizName == "Advanced 2"{
+                    List(advanced2Quiz) { contact in
+                        QuizOneRaw(qustions: contact, score: $score)
+                    }
                 }
             }
             .navigationBarTitle("Which of the following is valid swift",displayMode: .inline)
 
         } .navigationBarItems(trailing: Text("Score \(score)"))
+        
+        
         
 
 
@@ -31,7 +49,7 @@ struct Quizviwe: View {
 
 struct Quizviwe_Previews: PreviewProvider {
     static var previews: some View {
-        Quizviwe()
+        Quizviwe(quis: quises[0])
     }
 }
 

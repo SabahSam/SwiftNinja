@@ -5,13 +5,19 @@
 //  Created by Sabah, Sam on 23.11.20.
 //
 
+
+//NavigationLink(destination: DetaleView(contact: contact)){
+//    ContactRaw(contant: contact)
+
 import SwiftUI
 
 struct Test: View {
     var body: some View {
         NavigationView{
             List(quises) { quis in
-                NavigationLink(destination: Quizviwe()){
+                
+                
+                NavigationLink(destination: Quizviwe(quis: quis)){
 
                     QuisRaw(quis: quis)
                 }
