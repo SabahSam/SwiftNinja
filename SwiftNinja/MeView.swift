@@ -38,16 +38,16 @@ struct SubjectRaw: View {
             VStack(alignment: .leading){
                 Text(subject.subjectName)
                     .font(.system(size: 21, weight:.medium, design: .default))
-                Text("Subject scoure:\(subject.subjectScore)")
-                    Spacer()
+//                Text("Subject scoure:\(subject.subjectScore)")
+//                    Spacer()
             }
             Spacer()
-                Image("check")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 30, height: 30)
-                    .clipped()
-                    .cornerRadius(50)
+//                Image("check")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 30, height: 30)
+//                    .clipped()
+//                    .cornerRadius(50)
                     
             
         }

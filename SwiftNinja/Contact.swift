@@ -135,8 +135,14 @@ let intermittentQuiz = [
 let advanced1Quiz = [
     
     QuizOne(qustion: "var emptyString = 'Empty'", result: true),
-    QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
+    QuizOne(qustion: "for character in 'Dog!🐶' {\nprint(character)\n}\n \\Dog!🐶", result: false),
+    QuizOne(qustion: "let index = greeting.index(greeting.startIndex, offsetBy: 7)\n greeting[index] \n //T", result: false),
+    QuizOne(qustion: "let index = greeting.index(greeting.startIndex, offsetBy: 7)\n greeting[index] \n //T", result: false),
 
+
+    
+    
+    
 ].shuffled()
 
 let advanced2Quiz = [

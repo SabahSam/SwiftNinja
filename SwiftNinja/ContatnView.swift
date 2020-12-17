@@ -38,15 +38,15 @@ struct ContactRaw: View {
                     Spacer()
             }
             Spacer()
-            if contant.completed{
-                Image("check")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: 30, height: 30)
-                    .clipped()
-                    .cornerRadius(50)
-                    
-            }
+//            if contant.completed{
+//                Image("check")
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .frame(width: 30, height: 30)
+//                    .clipped()
+//                    .cornerRadius(50)
+//                    
+//            }
         }
     }
 }
