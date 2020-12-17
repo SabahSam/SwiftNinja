@@ -34,7 +34,7 @@ struct ContactRaw: View {
             VStack(alignment: .leading){
                 Text(contant.name)
                     .font(.system(size: 21, weight:.medium, design: .default))
-                Text("Scoure:\(contant.scoure)")
+               // Text("Scoure:\(contant.scoure)")
                     Spacer()
             }
             Spacer()
