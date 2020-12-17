@@ -10,6 +10,7 @@
 		9B74E2192569D12F00DC53BC /* OnlineSwiftPlayGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74E2182569D12F00DC53BC /* OnlineSwiftPlayGround.swift */; };
 		9B74E221256C220D00DC53BC /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74E220256C220C00DC53BC /* Test.swift */; };
 		9B74E226256C3D3800DC53BC /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74E225256C3D3800DC53BC /* BarChart.swift */; };
+		9B77C476258C00CC009E2FFA /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C475258C00CC009E2FFA /* Readme.md */; };
 		9BA8C42C2582AC3E00F51F54 /* Quizviwe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C42B2582AC3E00F51F54 /* Quizviwe.swift */; };
 		9BB5A65325693B7B00328869 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A65225693B7B00328869 /* LearnView.swift */; };
 		9BB5A6592569577800328869 /* LearnBySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A6582569577800328869 /* LearnBySubject.swift */; };
@@ -52,6 +53,7 @@
 		9B74E2182569D12F00DC53BC /* OnlineSwiftPlayGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnlineSwiftPlayGround.swift; sourceTree = "<group>"; };
 		9B74E220256C220C00DC53BC /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		9B74E225256C3D3800DC53BC /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
+		9B77C475258C00CC009E2FFA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		9BA8C42B2582AC3E00F51F54 /* Quizviwe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizviwe.swift; sourceTree = "<group>"; };
 		9BB5A65225693B7B00328869 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		9BB5A6582569577800328869 /* LearnBySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnBySubject.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				9B74E225256C3D3800DC53BC /* BarChart.swift */,
 				9BCC30DC2568A94F00A9DB6E /* Prospect.swift */,
 				9BCC30D7256874B200A9DB6E /* MeView.swift */,
+				9B77C475258C00CC009E2FFA /* Readme.md */,
 				9BCC30A52568716200A9DB6E /* Assets.xcassets */,
 				9BCC30AA2568716200A9DB6E /* LaunchScreen.storyboard */,
 				9BCC30AD2568716200A9DB6E /* Info.plist */,
@@ -283,6 +286,7 @@
 			files = (
 				9BCC30AC2568716200A9DB6E /* LaunchScreen.storyboard in Resources */,
 				9BCC30A92568716200A9DB6E /* Preview Assets.xcassets in Resources */,
+				9B77C476258C00CC009E2FFA /* Readme.md in Resources */,
 				9BCC30A62568716200A9DB6E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

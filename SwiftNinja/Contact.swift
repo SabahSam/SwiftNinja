@@ -93,7 +93,9 @@ struct QuizOne: Identifiable {
 
 
 let basikKnowladgeQuiz = [
-    
+    QuizOne(qustion: "'hello, ' + 'world'  // equals 'hello, world'", result: true),
+    QuizOne(qustion: "9 % 4    // equals 1", result: true),
+    QuizOne(qustion: "Equal to (a == b)", result: false),
     QuizOne(qustion: "Let X = '10' ", result: true),
     QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
     QuizOne(qustion: " Uni = Goethe ", result: true),
@@ -103,9 +105,6 @@ let basikKnowladgeQuiz = [
     QuizOne(qustion: "Double represents a 32-bit floating-point number.", result: false),
     QuizOne(qustion: "Float represents a 32-bit floating-point number.", result: false),
     QuizOne(qustion: "let three = 3 //is from type Int32", result: false),
-    QuizOne(qustion: "let three = 3 //is from type Int32", result: false),
-    QuizOne(qustion: "let integerPi = Int(pi)", result: true),
-    QuizOne(qustion: "let i = 1\n if i\n {\n }", result: false)
 
 
     
@@ -114,9 +113,18 @@ let basikKnowladgeQuiz = [
 
 
 let intermittentQuiz = [
-    
-    QuizOne(qustion: "Let X = '10' ", result: true),
+    QuizOne(qustion: "var myCode: Int? = 404", result: true),
+    QuizOne(qustion: "var yourAnswer: String?", result: true),
+    QuizOne(qustion: "var myCode: Int? = 404", result: true),
+    QuizOne(qustion: "let i = 1\n if i\n {\n }", result: false),
+    QuizOne(qustion: "let integerPi = Int(pi)", result: true),
+    QuizOne(qustion: "let three = 3 //is from type Int32", result: false),
+    QuizOne(qustion: "a != nil ? a! : b", result: true),
+    QuizOne(qustion: "a != nil ? a! : b", result: true),
+    QuizOne(qustion: "'let dollarSign = \u{24}'", result: true),
+    QuizOne(qustion: "var emptyString = 'Empty'", result: true),
 
+    
 
 ].shuffled()
 
@@ -126,7 +134,7 @@ let intermittentQuiz = [
 
 let advanced1Quiz = [
     
-    QuizOne(qustion: "Let X = '10' ", result: true),
+    QuizOne(qustion: "var emptyString = 'Empty'", result: true),
     QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
 
 ].shuffled()
@@ -135,5 +143,5 @@ let advanced2Quiz = [
     
     QuizOne(qustion: "Let X = '10' ", result: true),
     QuizOne(qustion: "var Tawon = Frankfurt ", result: false),
-    QuizOne(qustion: " Uni = Goethe ", result: true),
+    QuizOne(qustion: "func greet(person: String){\nlet greeting = 'Hello,' + person\nreturn greeting\n}", result: false)
 ].shuffled()
