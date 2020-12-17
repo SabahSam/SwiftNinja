@@ -11,6 +11,17 @@
 		9B74E221256C220D00DC53BC /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74E220256C220C00DC53BC /* Test.swift */; };
 		9B74E226256C3D3800DC53BC /* BarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B74E225256C3D3800DC53BC /* BarChart.swift */; };
 		9B77C476258C00CC009E2FFA /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C475258C00CC009E2FFA /* Readme.md */; };
+		9B77C486258C192C009E2FFA /* CV.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C47B258C1929009E2FFA /* CV.jpeg */; };
+		9B77C487258C192C009E2FFA /* HS2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C47C258C1929009E2FFA /* HS2.png */; };
+		9B77C488258C192C009E2FFA /* Quiz2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C47D258C192A009E2FFA /* Quiz2.jpeg */; };
+		9B77C489258C192C009E2FFA /* Overall.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C47E258C192A009E2FFA /* Overall.jpeg */; };
+		9B77C48A258C192C009E2FFA /* BQ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C47F258C192A009E2FFA /* BQ.jpeg */; };
+		9B77C48B258C192C009E2FFA /* Learn2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C480258C192B009E2FFA /* Learn2.jpeg */; };
+		9B77C48C258C192C009E2FFA /* Quiz.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C481258C192B009E2FFA /* Quiz.jpeg */; };
+		9B77C48D258C192C009E2FFA /* Semicolons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C482258C192B009E2FFA /* Semicolons.jpeg */; };
+		9B77C48E258C192C009E2FFA /* Basic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C483258C192C009E2FFA /* Basic.jpeg */; };
+		9B77C48F258C192C009E2FFA /* Learn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C484258C192C009E2FFA /* Learn.jpeg */; };
+		9B77C490258C192C009E2FFA /* FA.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C485258C192C009E2FFA /* FA.jpeg */; };
 		9BA8C42C2582AC3E00F51F54 /* Quizviwe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C42B2582AC3E00F51F54 /* Quizviwe.swift */; };
 		9BB5A65325693B7B00328869 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A65225693B7B00328869 /* LearnView.swift */; };
 		9BB5A6592569577800328869 /* LearnBySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A6582569577800328869 /* LearnBySubject.swift */; };
@@ -54,6 +65,17 @@
 		9B74E220256C220C00DC53BC /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		9B74E225256C3D3800DC53BC /* BarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChart.swift; sourceTree = "<group>"; };
 		9B77C475258C00CC009E2FFA /* Readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		9B77C47B258C1929009E2FFA /* CV.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = CV.jpeg; sourceTree = "<group>"; };
+		9B77C47C258C1929009E2FFA /* HS2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HS2.png; sourceTree = "<group>"; };
+		9B77C47D258C192A009E2FFA /* Quiz2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Quiz2.jpeg; sourceTree = "<group>"; };
+		9B77C47E258C192A009E2FFA /* Overall.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Overall.jpeg; sourceTree = "<group>"; };
+		9B77C47F258C192A009E2FFA /* BQ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BQ.jpeg; sourceTree = "<group>"; };
+		9B77C480258C192B009E2FFA /* Learn2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Learn2.jpeg; sourceTree = "<group>"; };
+		9B77C481258C192B009E2FFA /* Quiz.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Quiz.jpeg; sourceTree = "<group>"; };
+		9B77C482258C192B009E2FFA /* Semicolons.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Semicolons.jpeg; sourceTree = "<group>"; };
+		9B77C483258C192C009E2FFA /* Basic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Basic.jpeg; sourceTree = "<group>"; };
+		9B77C484258C192C009E2FFA /* Learn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Learn.jpeg; sourceTree = "<group>"; };
+		9B77C485258C192C009E2FFA /* FA.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FA.jpeg; sourceTree = "<group>"; };
 		9BA8C42B2582AC3E00F51F54 /* Quizviwe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizviwe.swift; sourceTree = "<group>"; };
 		9BB5A65225693B7B00328869 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		9BB5A6582569577800328869 /* LearnBySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnBySubject.swift; sourceTree = "<group>"; };
@@ -106,6 +128,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B77C47A258C1900009E2FFA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9B77C483258C192C009E2FFA /* Basic.jpeg */,
+				9B77C47F258C192A009E2FFA /* BQ.jpeg */,
+				9B77C47B258C1929009E2FFA /* CV.jpeg */,
+				9B77C485258C192C009E2FFA /* FA.jpeg */,
+				9B77C47C258C1929009E2FFA /* HS2.png */,
+				9B77C484258C192C009E2FFA /* Learn.jpeg */,
+				9B77C480258C192B009E2FFA /* Learn2.jpeg */,
+				9B77C47E258C192A009E2FFA /* Overall.jpeg */,
+				9B77C481258C192B009E2FFA /* Quiz.jpeg */,
+				9B77C47D258C192A009E2FFA /* Quiz2.jpeg */,
+				9B77C482258C192B009E2FFA /* Semicolons.jpeg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		9BCC30902568716200A9DB6E = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +186,7 @@
 				9BCC30DC2568A94F00A9DB6E /* Prospect.swift */,
 				9BCC30D7256874B200A9DB6E /* MeView.swift */,
 				9B77C475258C00CC009E2FFA /* Readme.md */,
+				9B77C47A258C1900009E2FFA /* Images */,
 				9BCC30A52568716200A9DB6E /* Assets.xcassets */,
 				9BCC30AA2568716200A9DB6E /* LaunchScreen.storyboard */,
 				9BCC30AD2568716200A9DB6E /* Info.plist */,
@@ -284,10 +325,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B77C48A258C192C009E2FFA /* BQ.jpeg in Resources */,
+				9B77C48C258C192C009E2FFA /* Quiz.jpeg in Resources */,
 				9BCC30AC2568716200A9DB6E /* LaunchScreen.storyboard in Resources */,
+				9B77C490258C192C009E2FFA /* FA.jpeg in Resources */,
+				9B77C488258C192C009E2FFA /* Quiz2.jpeg in Resources */,
+				9B77C48B258C192C009E2FFA /* Learn2.jpeg in Resources */,
 				9BCC30A92568716200A9DB6E /* Preview Assets.xcassets in Resources */,
 				9B77C476258C00CC009E2FFA /* Readme.md in Resources */,
+				9B77C487258C192C009E2FFA /* HS2.png in Resources */,
+				9B77C489258C192C009E2FFA /* Overall.jpeg in Resources */,
+				9B77C48E258C192C009E2FFA /* Basic.jpeg in Resources */,
+				9B77C486258C192C009E2FFA /* CV.jpeg in Resources */,
 				9BCC30A62568716200A9DB6E /* Assets.xcassets in Resources */,
+				9B77C48F258C192C009E2FFA /* Learn.jpeg in Resources */,
+				9B77C48D258C192C009E2FFA /* Semicolons.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
