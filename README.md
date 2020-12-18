@@ -75,7 +75,7 @@ With various topics to choose from, such as:
 
 
 When the user has finished a course, a check mark is put on the course bar as indicator.<br><br>
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Basic.jpeg" width="600">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Basic.jpeg" width="400">
 
 
 
