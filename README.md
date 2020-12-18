@@ -55,7 +55,7 @@ Under **Learn** are 4 course levels available to the users;
 * Advanced 
 * Advanced 2
 <br>
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn2.jpeg" width="600">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn2.jpeg" width="400">
 <br>
 With various topics to choose from, such as:
 * Constants and Variables
@@ -69,8 +69,8 @@ With various topics to choose from, such as:
 * ...
 <br>
 <p float="left">
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/CV.jpeg" width="600">
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Semicolons.jpeg" width="600">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/CV.jpeg" width="400">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Semicolons.jpeg" width="400">
 </p>
 
 
