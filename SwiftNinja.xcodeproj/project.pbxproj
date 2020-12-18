@@ -22,6 +22,11 @@
 		9B77C48E258C192C009E2FFA /* Basic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C483258C192C009E2FFA /* Basic.jpeg */; };
 		9B77C48F258C192C009E2FFA /* Learn.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C484258C192C009E2FFA /* Learn.jpeg */; };
 		9B77C490258C192C009E2FFA /* FA.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C485258C192C009E2FFA /* FA.jpeg */; };
+		9B77C499258C333D009E2FFA /* interface3 .png in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C494258C333C009E2FFA /* interface3 .png */; };
+		9B77C49A258C333D009E2FFA /* Semicolons.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C495258C333C009E2FFA /* Semicolons.jpeg */; };
+		9B77C49B258C333D009E2FFA /* Interface2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C496258C333C009E2FFA /* Interface2.png */; };
+		9B77C49C258C333D009E2FFA /* Interface 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C497258C333C009E2FFA /* Interface 4.png */; };
+		9B77C49D258C333D009E2FFA /* Achievement.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9B77C498258C333C009E2FFA /* Achievement.jpeg */; };
 		9BA8C42C2582AC3E00F51F54 /* Quizviwe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA8C42B2582AC3E00F51F54 /* Quizviwe.swift */; };
 		9BB5A65325693B7B00328869 /* LearnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A65225693B7B00328869 /* LearnView.swift */; };
 		9BB5A6592569577800328869 /* LearnBySubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB5A6582569577800328869 /* LearnBySubject.swift */; };
@@ -76,6 +81,11 @@
 		9B77C483258C192C009E2FFA /* Basic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Basic.jpeg; sourceTree = "<group>"; };
 		9B77C484258C192C009E2FFA /* Learn.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Learn.jpeg; sourceTree = "<group>"; };
 		9B77C485258C192C009E2FFA /* FA.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FA.jpeg; sourceTree = "<group>"; };
+		9B77C494258C333C009E2FFA /* interface3 .png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "interface3 .png"; sourceTree = "<group>"; };
+		9B77C495258C333C009E2FFA /* Semicolons.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Semicolons.jpeg; path = "../../../../../../../Containers/com.wdc.WDDesktop.WDDesktopFinderSync/Data/volumes/4dda77d9-22e9-4b7e-a85a-c19a21e64fce/Sam's My Cloud Home Duo/Home/Uni/Plattformen und systeme für eLearning/Images/Semicolons.jpeg"; sourceTree = "<group>"; };
+		9B77C496258C333C009E2FFA /* Interface2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interface2.png; sourceTree = "<group>"; };
+		9B77C497258C333C009E2FFA /* Interface 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Interface 4.png"; sourceTree = "<group>"; };
+		9B77C498258C333C009E2FFA /* Achievement.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Achievement.jpeg; sourceTree = "<group>"; };
 		9BA8C42B2582AC3E00F51F54 /* Quizviwe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quizviwe.swift; sourceTree = "<group>"; };
 		9BB5A65225693B7B00328869 /* LearnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnView.swift; sourceTree = "<group>"; };
 		9BB5A6582569577800328869 /* LearnBySubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnBySubject.swift; sourceTree = "<group>"; };
@@ -135,6 +145,11 @@
 				9B77C47F258C192A009E2FFA /* BQ.jpeg */,
 				9B77C47B258C1929009E2FFA /* CV.jpeg */,
 				9B77C485258C192C009E2FFA /* FA.jpeg */,
+				9B77C498258C333C009E2FFA /* Achievement.jpeg */,
+				9B77C497258C333C009E2FFA /* Interface 4.png */,
+				9B77C496258C333C009E2FFA /* Interface2.png */,
+				9B77C494258C333C009E2FFA /* interface3 .png */,
+				9B77C495258C333C009E2FFA /* Semicolons.jpeg */,
 				9B77C47C258C1929009E2FFA /* HS2.png */,
 				9B77C484258C192C009E2FFA /* Learn.jpeg */,
 				9B77C480258C192B009E2FFA /* Learn2.jpeg */,
@@ -325,16 +340,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B77C49B258C333D009E2FFA /* Interface2.png in Resources */,
+				9B77C49D258C333D009E2FFA /* Achievement.jpeg in Resources */,
 				9B77C48A258C192C009E2FFA /* BQ.jpeg in Resources */,
 				9B77C48C258C192C009E2FFA /* Quiz.jpeg in Resources */,
 				9BCC30AC2568716200A9DB6E /* LaunchScreen.storyboard in Resources */,
 				9B77C490258C192C009E2FFA /* FA.jpeg in Resources */,
 				9B77C488258C192C009E2FFA /* Quiz2.jpeg in Resources */,
 				9B77C48B258C192C009E2FFA /* Learn2.jpeg in Resources */,
+				9B77C499258C333D009E2FFA /* interface3 .png in Resources */,
 				9BCC30A92568716200A9DB6E /* Preview Assets.xcassets in Resources */,
 				9B77C476258C00CC009E2FFA /* Readme.md in Resources */,
+				9B77C49C258C333D009E2FFA /* Interface 4.png in Resources */,
 				9B77C487258C192C009E2FFA /* HS2.png in Resources */,
 				9B77C489258C192C009E2FFA /* Overall.jpeg in Resources */,
+				9B77C49A258C333D009E2FFA /* Semicolons.jpeg in Resources */,
 				9B77C48E258C192C009E2FFA /* Basic.jpeg in Resources */,
 				9B77C486258C192C009E2FFA /* CV.jpeg in Resources */,
 				9BCC30A62568716200A9DB6E /* Assets.xcassets in Resources */,
