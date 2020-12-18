@@ -30,14 +30,14 @@ The app have 3 main screens;
 # Home
 **Dashboard** where the users can track their Learn and Quiz progress.
 
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Quiz.jpeg " width="200">
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn.jpeg" width="200">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Quiz.jpeg " width="400">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn.jpeg" width="400">
 
 
 
 
 And / or see an overall progress wheel of both combined.
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Overall.jpeg" width="200">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Overall.jpeg" width="400">
 
 
 
@@ -62,13 +62,13 @@ With various topics to choose from, such as:
 * Debugging with Assertions
 * ...
 
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/CV.jpeg" width="300">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/CV.jpeg" width="600">
 
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Semicolons.jpeg" width="300">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Semicolons.jpeg" width="600">
 
 
 When the user has finished a course, a check mark is put on the course bar as indicator.
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Basic.jpeg" width="300">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Basic.jpeg" width="600">
 
 
 
