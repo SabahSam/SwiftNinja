@@ -18,7 +18,7 @@ IOS Device
 All done!
 The app home screen look like this: 
 
-<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/HS2.png" width="300">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/HS2.png" width="600">
 
 # App Interface
 The app have 3 main screens;
