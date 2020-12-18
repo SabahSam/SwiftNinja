@@ -18,7 +18,7 @@ IOS Device
 All done!
 The app home screen look like this: 
 
-![Swift Ninja_Home Screen](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/HS2.png "SN Homescreen")
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/HS2.png" width="300">
 
 # App Interface
 The app have 3 main screens;
@@ -30,12 +30,15 @@ The app have 3 main screens;
 # Home
 **Dashboard** where the users can track their Learn and Quiz progress.
 
-![Quiz Progress](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Quiz.jpeg "Quiz")
-![Learn Progress](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn.jpeg "Learn")
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Quiz.jpeg " width="200">
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn.jpeg" width="200">
+
+
 
 
 And / or see an overall progress wheel of both combined.
-![Overall Progress](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Overall.jpeg "Overall") 
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Overall.jpeg" width="200">
+
 
 
 
@@ -46,7 +49,7 @@ Under **Learn** are 4 course levels available to the users;
 * Advanced 
 * Advanced 2
 
-![Learn Screen](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn2.jpeg "Learn Screen")  
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Learn2.jpeg" width="300">
 
 With various topics to choose from, such as:
 * Constants and Variables
@@ -59,24 +62,27 @@ With various topics to choose from, such as:
 * Debugging with Assertions
 * ...
 
-![Constants & Variables](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/CV.jpeg "Constants & Variables") 
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/CV.jpeg" width="300">
 
-![Semicolons](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Semicolons.jpeg "Semicolons")
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Semicolons.jpeg" width="300">
+
 
 When the user has finished a course, a check mark is put on the course bar as indicator.
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Basic.jpeg" width="300">
 
-![Basic](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Basic.jpeg "Basic") 
 
 
 # Test Your Knowledge
 
 To test their knowledge, the users can take small quizzes, of four levels Basic to Advanced 2.
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Quiz2.jpeg" width="300">
 
-![TyK](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/Quiz2.jpeg "TyN") 
 
 They get 10 points for each correct answer.
-![Basic Quiz](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/BQ.jpeg "Basic Quiz") 
-![Answers](https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/FA.jpeg "Answers") 
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/BQ.jpeg" width="300">
+
+<img src="https://github.com/SabahSam/SwiftNinja/blob/main/SwiftNinja/Images/FA.jpeg" width="300">
+
 
 
 # PlayGround
