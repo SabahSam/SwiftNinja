@@ -81,6 +81,8 @@ They get 10 points for each correct answer.
 
 # PlayGround
 The **Playground** section is still under development. Therefore, it will not be discussed in this current ReadMe file.
+All of the Tutorials and the quizzes in the App are based on the Swift languge dokumntation "swift-book", for more information please visit https://swift.org/documentation/
 
+ Subject to change due to work in progress
 
 
